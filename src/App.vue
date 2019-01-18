@@ -1,17 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <NoSlots></NoSlots>
+
+    <hr>
+
+    <BasicSlots></BasicSlots>
+
+    <hr>
+
+    <NamedSlots></NamedSlots>
+
+    <hr>
+
+    <ScopedSlots></ScopedSlots>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import NoSlots from "./components/1.NoSlots";
+import BasicSlots from "./components/2.BasicSlots";
+import NamedSlots from "./components/3.NamedSlots";
+import ScopedSlots from "./components/4.ScopedSlots";
 
 export default {
-  name: "app",
   components: {
-    HelloWorld
+    NoSlots,
+    BasicSlots,
+    NamedSlots,
+    ScopedSlots
   }
 };
 </script>
