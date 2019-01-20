@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <h3>Component content</h3>
-  </div>
+  <h3>Component content</h3>
 </template>
 
 <script>

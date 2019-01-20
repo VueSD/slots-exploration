@@ -1,9 +1,6 @@
 <template>
   <div>
-    <h3>Component content</h3>
-
     <slot :currentTime="currentTime">
-      <!-- <p>The current time is: {{ currentTime }}</p> -->
     </slot>
   </div>
 </template>

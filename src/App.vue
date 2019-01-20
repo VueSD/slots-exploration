@@ -1,20 +1,22 @@
 <template>
   <div id="app">
-
     <NoSlots></NoSlots>
-
     <hr>
-
     <BasicSlots></BasicSlots>
-
     <hr>
-
     <NamedSlots></NamedSlots>
-
     <hr>
-
-    <ScopedSlots></ScopedSlots>
-
+    <ScopedSlots>
+      <template slot-scope="{ currentTime }">
+        <h1>Time Formats:</h1>
+        <p>{{ new Date(currentTime) }}</p>
+        <p>{{ new Date(currentTime).toDateString() }}</p>
+        <p>{{ new Date(currentTime).toLocaleString() }}</p>
+        <p>{{ new Date(currentTime).toLocaleTimeString() }}</p>
+        <p>{{ new Date(currentTime).toString() }}</p>
+        <p>{{ new Date(currentTime).toTimeString() }}</p>
+      </template>
+    </ScopedSlots>
   </div>
 </template>
 
